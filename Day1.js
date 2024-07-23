@@ -107,4 +107,61 @@ name has to Start with UPPERCASE
 let upper = userName.charAt(0).toUpperCase(); // first letter => variable.slice(0,1)
 alert(`Hello ${upper}${userName.slice(1, userName.length)}`);
 
+/* Operators : Operators are used to perform some mathematic operations
+Types :
+=>Arithematic Operators
+=>Comparision Operators
+=>Assignment Operators
+=>Logical Operators
+=>Bitwise Operators
+=>Ternary operator */
+
+// Arithematic oprators +,-,*,/,%,**,++,--
+let a = 10;
+let b = 20;
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a % b);  // Remainder
+console.log(a / b);  // Coefficient
+console.log(a++);
+console.log(a--);
+
+// Comparision operators
+console.log(a < b);
+console.log(a > b);
+console.log(a <= b);
+console.log(a >= b);
+console.log(a != b);
+// ==    ,    ====
+let marks = 46;
+let anothermarks = "46";
+console.log(marks == anothermarks); // checks only the values same or not
+console.log(marks === anothermarks); // chacks the valuse + datatypes 
+
+// Assignment operators 
+let x = 10;
+console.log(x += 10);    // x+=10 ==> x=x+10
+console.log(x -= 10);
+console.log(x *= 10);
+console.log(x %= 10);
+
+// Logical operator
+console.log(a && b);
+console.log(a || b);
+console.log(!a);
+
+// Bitwise Operators &,|,!,<<,>>,^,~
+console.log(a & b);
+
+// ternary oprator  "  ?  "   
+// Shortcut of the if else statement
+let age = 18;
+
+age < 18 ? console.log("Minor") :
+ console.log("Major");
+
+
+
+
 ------------------- Day1-----------------------
