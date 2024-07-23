@@ -1,3 +1,8 @@
+                                        // Revisiting Javascript
+                                        // Date : 24 - 07 - 2024 
+                                        // DAY 1
+                                        
+// OUTPUTS : 
 console.log("abhi");
 alert box:
 alert("Double quotes");
@@ -164,4 +169,4 @@ age < 18 ? console.log("Minor") :
 
 
 
-------------------- Day1-----------------------
+
