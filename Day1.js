@@ -1,10 +1,10 @@
-                                        // Revisiting Javascript
-                                        // Date : 24 - 07 - 2024 
-                                        // DAY 1
+// Revisiting Javascript
+// Date : 24 - 07 - 2024 
+// DAY 1
                                         
-// OUTPUTS : 
+// OUTPUTS in javascript: 
 console.log("abhi");
-alert box:
+//alert box:
 alert("Double quotes");
 alert('single quote');
 // user input 
@@ -12,9 +12,9 @@ window.prompt("enetr the age: ");
 window.alert("Receive inputs :");
 console.log("CTRL+Shift+J");
 
-//datatypes in js
+//datatypes in js 
 primitive vs non - primitive datatypes
-primitive datatypes
+primitive datatypes :  // numbers,strings,bool,undefined,null
 let age = 20;
 let name = "abhi";
 let isstudent = true;
@@ -53,7 +53,7 @@ alert(`Your age is ${age}`);
 
 // rules to create variables
    =>it must have meaning
- => variable name can't start width numbers
+   => variable name can't start width numbers
    =>doesn't have space 
    =>don't start with special charecters
    =>we can create an variable with "camalCase"
@@ -67,7 +67,6 @@ let last_name = "mannan";
 let fullname = first_name + " " + last_name;
 // console.log(fullname);
 alert(first_name.length);
-
 
 // Task :-
 function usermessage() {
@@ -132,7 +131,7 @@ console.log(a / b);  // Coefficient
 console.log(a++);
 console.log(a--);
 
-// Comparision operators
+// Comparision operators    <,>,<=,>=,!=,==,===
 console.log(a < b);
 console.log(a > b);
 console.log(a <= b);
@@ -159,7 +158,7 @@ console.log(!a);
 // Bitwise Operators &,|,!,<<,>>,^,~
 console.log(a & b);
 
-// ternary oprator  "  ?  "   
+// ternary oprator  "  ?  "     synatax : condition ? true statement : false statement;
 // Shortcut of the if else statement
 let age = 18;
 
@@ -189,6 +188,7 @@ console.log(n1+=n2);
 // Functions
 
 // FUNCTION STATEMENT or FUNCTION DECLARATION
+// function statements are nothing but normal functions
 
 function displayname(){
  return "Abhi Mannan";
@@ -213,8 +213,8 @@ console.log(y());
     // THE FUNCTION STATEMENT WE CALL CALL BEFORE THE DECLARATION OF THE FUNCTION
     // INCASE OF FUNCTION STATEMENT WE CAN'T CALL IT BEFORE THE FUNCTION DECLARATION
 
-
 // Annomous Function  : function are used as values
+// A function has no name is called as annonomous function
 var add= function(a,b){
  return a+b;
 }
@@ -242,7 +242,115 @@ let name=function named(){
 }
 named();
 
+// Parameters VS Arguments
+ function milkPrice(botteles){ // parameters
+     var price=botteles*20;
+     console.log(`the price for the ${botteles}bottles milk is ${price}`);
+ }
+ milkPrice(5);   // Arguments
 
+// Task :- If u enter the money then we need to calculate the number of bottles can buy
+function battles(money){
+    var battleprice=10;
+    var noofbottles=Math.floor(money/battleprice);
+    console.log(`You Can Buy ${noofbottles} Bottles`);
+}
+ battles(52);
+
+// Task :- If u enter the money then we need to calculate the number of bottles can buy
+function battles(money){
+    var battleprice=10;
+    var noofbottles=Math.floor(money/battleprice);
+    console.log(`You Can Buy ${noofbottles} Bottles`);
+}
+ battles(52);
+
+ 
+// TASK : If the person lives 90 years,then we have to calculate that the user 
+//        is going to enter his age then we need to calculate the remaining
+//        days,weeks,months he will live in this world
+function lifeInWeeks() {
+    var age=window.prompt("Enter Your Age To Calculated How Many Days,Weeks,Months U Will Live In This World...");
+
+    // No. of days,weeks,months in a year
+    let days=365;
+    let weeks=52;
+    let months=12;
+        // Total no. of days,weeks,months for 90years
+        let totaldays=365*90;
+        let totalweeks=52*90;
+        let totalmonths=12*90;
+    // Totals days,weeks,months lived    
+    let liveddays=age*days;
+    let livedweeks=age*weeks;
+    let livedmonths=age*months;
+
+    let willlivedays=totaldays-liveddays;  
+    let willliveweeks=totalweeks-livedweeks;
+    let willlivemonths=totalmonths-livedmonths;
+
+    console.log(`You have ${willlivedays} days, ${willliveweeks} weeks, and ${willlivemonths} months left.`)
+    }
+
+lifeInWeeks();
+
+// first class function: functions imside another function
+ //  |
+//   ability to use as a value        let x=function(){
+//                                        return function(){ ----- } }
+//                                    x() ---> function calling  => in this example a function used as a value
+
+let first_class_function=function(){
+    return function xyz(){
+    }
+}
+console.log(first_class_function());
+
+
+let x=function(){
+    return add(4,4);
+}
+function add(a,b){
+    return a+b;
+}
+console.log(x(add()));
+   
+// note : first class functions,first class citizens are same;
+
+// return : gives an returned value when we call the function
+function getmilk(money){
+    return money%1.5;
+}
+console.log(getmilk(4));
+
+// BMI calculator
+let height=window.prompt("Height : ");
+let weight=window.prompt("Weight : ");
+function bmi(height,weight){
+    let bmi=weight/(height*height); // bmi=weight/(height*height)
+    return Math.floor(bmi);
+}
+console.log(bmi());
+
+// Random number generation
+
+let random_number=Math.round(Math.random()*10);
+let random_number1=Math.round(Math.random()*5);
+let random_number2=Math.round(Math.random()*50);
+console.log(random_number);
+console.log(random_number1);
+console.log(random_number2);
+
+// task : Love Calculator
+let your_name=prompt("enter ur name : ");
+let lover_name=prompt("Enter ur Lover name : ");
+function calculatelove(){
+    let randomnum=Math.random()*100;
+    let realvalue=Math.floor(randomnum+1);
+    console.log(`The Love Between ${your_name} & ${lover_name} is ${realvalue}%`)
+
+}
+calculatelove();
 
 
 
