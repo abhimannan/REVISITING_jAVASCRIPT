@@ -166,6 +166,82 @@ let age = 18;
 age < 18 ? console.log("Minor") :
  console.log("Major");
 
+// Task :  to convert dog age to human age
+// () has highest priority
+let dogAge=window.prompt("Enter The Dod Age : ");
+Number(dogAge);
+let humanAge = (dogAge-2)*4+21;
+console.log(humanAge);
+
+// Increment,decrement Operators
+// ++  ,  --
+// +=,-=,%=,/=,*= Assignmwnt operators
+var x=5;
+x=x+1;   //x++
+console.log(x)
+x=x-1;   //x--
+console.log(x);
+
+var n1=10;
+var n2=10;
+console.log(n1+=n2);
+
+// Functions
+
+// FUNCTION STATEMENT or FUNCTION DECLARATION
+
+function displayname(){
+ return "Abhi Mannan";
+}
+alert(displayname());
+
+function getMilk(){
+ alert("LeaveHouse");
+ alert("GetCash");
+ alert("BuyMilk");
+}
+getMilk();
+
+// FUNCTION EXPRESSION
+
+let y=function(){
+ return "abhi";
+}
+console.log(y());
+
+/* THE DIFFERENCE B/W FUNCTION EXPRESSION & FUNCTION STATEMENT */
+    // THE FUNCTION STATEMENT WE CALL CALL BEFORE THE DECLARATION OF THE FUNCTION
+    // INCASE OF FUNCTION STATEMENT WE CAN'T CALL IT BEFORE THE FUNCTION DECLARATION
+
+
+// Annomous Function  : function are used as values
+var add= function(a,b){
+ return a+b;
+}
+console.log(add(8,8));
+
+// Arrow Function
+var a=10;
+var b=10;
+var add=(a,b)=>{
+ return a+b;
+}
+console.log(add(2,2));
+
+function main(){
+ return()=>{
+  return console.log("Move Function")
+ };
+
+}
+console.log(main());
+
+// Nmaed function 
+let name=function named(){
+ return console.log("Named function");
+}
+named();
+
 
 
 
