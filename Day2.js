@@ -1,3 +1,9 @@
+/*
+    REVISITING JAVASCRIPT
+    DAY2
+    DATE : 25 - 07 - 2024
+*/
+
 // Control Statements
 
 let track = false;
