@@ -1,3 +1,8 @@
+//    Revisiting Javascript
+//    DAY 4
+//    Date : 27 - 07 - 2024 
+
+
 // checkbox changes into clickable
 document.getElementById("change").innerHTML = "abhi";
 document.querySelector(".click").click();
